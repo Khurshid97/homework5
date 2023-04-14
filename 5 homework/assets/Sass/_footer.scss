@@ -1,0 +1,134 @@
+footer {
+    background: #52503B;
+}
+
+.top_footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 100px;
+
+    .uyqu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        li {
+            font-weight: 400;
+            font-size: 14px;
+            color: #FFFFFF;
+        }
+
+        a {
+            color: inherit;
+        }
+
+    }
+
+    
+    .first {
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .smm {        
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            display: flex;
+            gap: 25px;
+
+            li {
+                font-size: 22px;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .nletter {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        color: #FFFFFF;
+
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            max-width: 563px;
+        }
+
+        form {
+            width: 576px;
+            position: relative;
+            margin-top: 9px;
+
+            input {
+                width: 100%;
+                font-weight: 400;
+                font-size: 14px;
+                color: #52503B;
+                padding: 16px 30px;
+                background: #F9FAFB;
+                border: 1px solid #E5E7EB;
+                border-radius: 8px;
+            }
+
+            button {
+                position: absolute;
+                right: 5px;
+                padding: 5px;
+                font-weight: 400;
+                font-size: 14px;
+                color: #FFFFFF;
+                background: #52503B;
+                border-radius: 10px;
+                top: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #979473;
+                    color: aliceblue;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 950px) {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    @media (max-width: 650px) {
+        .nletter {
+            form {
+                width: 380px;
+            }
+        }
+    }
+
+    @media (max-width: 400px) {
+        .nletter {
+            form {
+                width: 300px;
+            }
+        }
+    }
+}
+
+
+.bottom_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 50px;
+    color: #FFFFFF;
+    padding-bottom: 110px;
+
+    .gow {
+        font-size: 14px;
+    }
+}

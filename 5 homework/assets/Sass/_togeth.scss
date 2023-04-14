@@ -1,0 +1,106 @@
+.togeth_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px 0 130px;
+
+    .left_tog {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        h3 {
+            font-weight: 400;
+            font-size: 32px;
+            color: #52503B;
+            margin-bottom: 13px;
+        }
+
+        h6 {
+            font-weight: 400;
+            font-size: 16px;
+            color: #52503B;
+            max-width: 514px;
+        }
+    }
+
+    .right_tog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 35px;
+        row-gap: 60px;
+
+        .righ_card {
+            display: flex;
+            gap: 16px;
+
+            .tog_img {
+                width: 36px;
+                height: 34px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                color: #333333;
+                max-width: 203px;
+            }
+        }
+    }
+
+    @media (max-width: 820px) {
+        .right_tog {
+            grid-template-columns: 1fr;
+            margin-top: 25px;
+        }
+    }
+}
+
+
+.hurry {
+    background: #FAF8F0;
+}
+
+.hurry_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    h2 {
+        max-width: 533px;
+        font-weight: 400;
+        font-size: 32px;
+        color: #52503B;
+        text-align: center;
+    }
+
+    p {
+        margin-top: 14px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #52503B;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+    .btns {
+        display: flex;
+        gap: 20px;
+
+        button {
+            padding: 16px 26px;
+            border: 4px solid #52503B;
+            border-radius: 6px;
+            font-weight: 400;
+            font-size: 16px;
+            color: #52503B;
+            cursor: pointer;
+            background-color: inherit;
+
+            &:hover {
+                background: #52503B;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

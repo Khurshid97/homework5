@@ -1,0 +1,125 @@
+.guests {
+    background: #FAF8F0;
+}
+
+.guests_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 150px;
+    position: relative;
+
+    h2 {
+        font-weight: 400;
+        font-size: 32px;
+        color: #52503B;
+    }
+
+    h5 {
+        margin-top: 14px;
+        margin-bottom: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        max-width: 572px;
+        text-align: center;
+    }
+
+    .guest_cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .guest_card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 33px;
+        background: #FFFFFF;
+        border: 1px solid rgba(82, 80, 59, 0.1);
+        border-radius: 4px;
+        transition: ease-in-out 1s;
+        cursor: pointer;
+
+        .stars {
+            display: flex;
+            gap: 3px;
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 18px;
+            color: #333333;
+        }
+
+        p {
+            max-width: 506px;
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 7px;
+        }
+
+        h6 {
+            color: #333333;
+            font-weight: 400;
+            font-size: 14px;
+            margin-left: 10px;
+            position: relative;
+        }
+
+        h6::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            background: #E08631;
+            top: -25%;
+            left: -10px;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .radius {
+        position: absolute;
+        bottom: 70px;
+        right: 0;
+        display: flex;
+        gap: 10px;
+
+        .r1 {
+            width: 60px;
+            height: 60px;
+            border: 2px solid #52503B;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 1s;
+
+            &:hover {
+                background-color: #52503B;
+            }
+        }
+    }
+
+    
+    @media (max-width: 1300px) {
+        .guest_cards {
+            justify-content: center;
+        }
+
+        .radius {
+            right: 25%;
+        }
+    }
+
+}
+
+.come {
+    background-image: url('../images/come.png');
+    width: 100%;
+    height: 60vh;
+}
+
+
